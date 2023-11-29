@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["DetailedCheck"] = "true";
+    ViewData["ManufacturerCheck"] = "false";
+    ViewData["ProductDefinitionCheck"] = "false";
+    ViewData["ProductCheck"] = "false";
+    ViewData["SearchCheck"] = "false";
+    ViewData["DataLoadCheck"] = "false";
+}
+
+
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-12">
+            <h2 style="color: black;">
+                Detailed Search
+            </h2>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3">
+            <form id="detailedSearch-form">
+                <div id="dxForm" class="mb-3"></div>
+                <div class="row text-end">
+                    <div class="col-2 offset-10">
+                        <button class="btn btn-primary w-100" id="save" type="submit">Ara</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3">
+            <div id="qpl-detailedsearch-datagrid"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            window.qpl.pages.detailedSearch.init({
+                editForm: "#detailedSearch-form",
+                editFormDx: "#detailedSearch-form #dxForm",
+                grid: "#qpl-detailedsearch-datagrid",
+                saveBtn: "#detailedSearch-form #save"
+            });
+        });
+
+    </script>
+}
+

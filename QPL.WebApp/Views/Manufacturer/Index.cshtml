@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["ManufacturerCheck"] = "true";
+    ViewData["DetailedCheck"] = "false";
+    ViewData["ProductDefinitionCheck"] = "false";
+    ViewData["ProductCheck"] = "false";
+    ViewData["SearchCheck"] = "false";
+    ViewData["DataLoadCheck"] = "false";
+}
+
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-10">
+            <h1 class="m-0">Manufacturer</h1>
+        </div>
+        <div class="col-2">
+            <a class="btn btn-primary w-100" asp-action="Add" asp-controller="Manufacturer">Create</a>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3">
+            <div id="qpl-manufacturer-datagrid"></div>
+        </div>
+    </div>
+</div>
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+             window.qpl.pages.manufacturer.init({ grid: "#qpl-manufacturer-datagrid" });
+        });
+    </script>
+}
+
+

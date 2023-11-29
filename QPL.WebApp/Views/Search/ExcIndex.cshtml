@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewData["Title"] = "ExcIndex";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-10">
+            <h1 class="m-0">Excel Search</h1>
+        </div>
+        <div class="col-2">
+            <a class="btn btn-primary w-100" asp-action="ExcIndex" asp-controller="Search">Dosya Yükle</a>
+        </div>
+    </div>
+   
+    <div class="row m-3">
+        <div class="row">
+            <div class="col-4">
+
+                <textarea id="myTextarea" style="text-transform: uppercase" rows="4" cols="50"></textarea>
+                <br>
+                <br />
+                <button id="excBtn" onclick="window.qpl.pages.search.excFilter()">Ara</button>
+
+                <p id="sonuc"></p>
+            </div>
+
+        </div>
+        <div class="shadow-sm rounded bg-white p-3">
+            <div id="qpl-search-datagrid"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            window.qpl.pages.search.init({
+                editForm: "#search-form",
+                editFormDx: "#search-form #dxForm",
+                grid: "#qpl-search-datagrid",
+                saveBtn: "#search-form #save",
+                excBtn: "#search-form #exc"
+            });
+        });
+    </script>
+}
+

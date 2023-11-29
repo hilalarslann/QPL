@@ -1,0 +1,58 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-12">
+            @if (Model.Id == 0)
+            {
+                <h1 class="m-0">Create new manufacturer</h1>
+            }
+            else
+            {
+                <h1 class="m-0">Manufacturer Editor</h1>
+            }
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3 qpl-page-manufacturereditor col-6">
+            <form id="manufacturereditor-form">
+                <div id="dxForm" class="mb-3"></div>
+                <div class="row">
+                    <div class="col-6">
+                        @if (Model.Id > 0)
+                        {
+                            <a class="btn btn-outline-secondary" asp-action="Index" asp-controller="Manufacturer" ><i class="fa fa-caret-left"></i> Back</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-outline-secondary" asp-action="Index" asp-controller="Manufacturer"><i class="fa fa-caret-left"></i> Cancel</a>
+                        }
+                    </div>
+                    <div class="col-6 text-end">
+                        @if (Model.Id > 0)
+                        {
+                            <button id="delete" class="btn btn-danger" type="button"><i class="fa fa-times"></i> Deletee</button>
+                        }
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i> Accept Changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            window.qpl.pages.manufacturer.initEditor({
+                editForm: "#manufacturereditor-form",
+                editFormDx: "#manufacturereditor-form #dxForm",
+                deleteBtn: "#manufacturereditor-form #delete"
+            }, @Model.Id);
+        });
+    </script>
+}

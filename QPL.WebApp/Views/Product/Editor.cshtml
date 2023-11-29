@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-12">
+            @if (Model.Id == 0)
+            {
+                <h1 class="m-0">Create new product</h1>
+            }
+            else
+            {
+                <h1 class="m-0">Product Editor</h1>
+            }
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3 qpl-page-producteditor">
+            <form id="producteditor-form">
+                <div id="dxForm" class="mb-3"></div>
+                <div class="row">
+                    <div class="col-6">
+                        <a class="btn btn-outline-secondary" asp-action="Edit" asp-controller="ProductDefinition" asp-route-id="@Model.ProductDefinitionId"><i class="fa fa-caret-left"></i> Cancel</a>
+                    </div>
+                    <div class="col-6 text-end">
+                        @if (Model.Id > 0)
+                        {
+                            <button id="delete" class="btn btn-danger" type="button"><i class="fa fa-times"></i> Delete</button>
+                        }
+                        <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i> Accept Changes</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var data = @Html.Raw(Json.Serialize(Model));
+        document.addEventListener("DOMContentLoaded", () => {
+            window.qpl.pages.product.initEditor({
+                editForm: "#producteditor-form",
+                editFormDx: "#producteditor-form #dxForm",
+                deleteBtn: "#producteditor-form #delete"
+            }, data);
+        });
+    </script>
+}

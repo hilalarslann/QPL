@@ -1,0 +1,189 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\obj\\Debug\\net7.0\\scopedcss\\projectbundle\\QPL.WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QPL.WebApp.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\dist\\main.css",
+      "PackagePath": "staticwebassets\\dist\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\dist\\main.js",
+      "PackagePath": "staticwebassets\\dist\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-300.ttf",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-300.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-300.woff",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-300.woff"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-300.woff2",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-300.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-400.ttf",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-400.woff",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-400.woff2",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-500.ttf",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-500.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-500.woff",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-500.woff"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-500.woff2",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-500.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-700.ttf",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-700.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-700.woff",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-700.woff"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\fonts\\Roboto-700.woff2",
+      "PackagePath": "staticwebassets\\files\\fonts\\Roboto-700.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\icons\\dxicons.ttf",
+      "PackagePath": "staticwebassets\\files\\icons\\dxicons.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\icons\\dxicons.woff",
+      "PackagePath": "staticwebassets\\files\\icons\\dxicons.woff"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\icons\\dxicons.woff2",
+      "PackagePath": "staticwebassets\\files\\icons\\dxicons.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\icons\\dxiconsmaterial.ttf",
+      "PackagePath": "staticwebassets\\files\\icons\\dxiconsmaterial.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\icons\\dxiconsmaterial.woff",
+      "PackagePath": "staticwebassets\\files\\icons\\dxiconsmaterial.woff"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\icons\\dxiconsmaterial.woff2",
+      "PackagePath": "staticwebassets\\files\\icons\\dxiconsmaterial.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\img\\sidebar-bg.jpg",
+      "PackagePath": "staticwebassets\\files\\img\\sidebar-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\img\\user-logo.png",
+      "PackagePath": "staticwebassets\\files\\img\\user-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\img\\usrlogo.png",
+      "PackagePath": "staticwebassets\\files\\img\\usrlogo.png"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\img\\yt-logo-full.svg",
+      "PackagePath": "staticwebassets\\files\\img\\yt-logo-full.svg"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\img\\yt-logo-text.svg",
+      "PackagePath": "staticwebassets\\files\\img\\yt-logo-text.svg"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\img\\yt-logo.svg",
+      "PackagePath": "staticwebassets\\files\\img\\yt-logo.svg"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\js\\main.js",
+      "PackagePath": "staticwebassets\\files\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\scss\\base\\_base.scss",
+      "PackagePath": "staticwebassets\\files\\scss\\base\\_base.scss"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\scss\\components\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\files\\scss\\components\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\scss\\components\\_header.scss",
+      "PackagePath": "staticwebassets\\files\\scss\\components\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\scss\\components\\_sidebar.scss",
+      "PackagePath": "staticwebassets\\files\\scss\\components\\_sidebar.scss"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\scss\\config\\_variables.scss",
+      "PackagePath": "staticwebassets\\files\\scss\\config\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\scss\\layout\\_layout.scss",
+      "PackagePath": "staticwebassets\\files\\scss\\layout\\_layout.scss"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\files\\scss\\styles.scss",
+      "PackagePath": "staticwebassets\\files\\scss\\styles.scss"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\hiarslan\\Desktop\\QPL\\QPL.WebApp\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.QPL.WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.QPL.WebApp.props",
+      "PackagePath": "build\\QPL.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.QPL.WebApp.props",
+      "PackagePath": "buildMultiTargeting\\QPL.WebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.QPL.WebApp.props",
+      "PackagePath": "buildTransitive\\QPL.WebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,65 @@
+﻿@using QPL.WebApp.Models.Manufacturer;
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model ManufacturerDetailsViewModel
+
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-12">
+            <h1 class="m-0">Manufacturer Details</h1>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3 col-6">
+            <ul class="list-group mb-3">
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3 text-start fw-bold">Name</div>
+                        <div class="col-9 text-start">@Model.Name</div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-3 text-start fw-bold">Code</div>
+                        <div class="col-9 text-start">@Model.Code</div>
+                    </div>
+                </li>
+			</ul>
+			<div class="row">
+				<div class="col-4 text-start">
+					<a class="btn btn-outline-secondary" asp-action="Index" asp-controller="Manufacturer"><i class="fa fa-caret-left"></i> Manufacturer List</a>
+				</div>
+				<div class="col-8 text-end">
+					<a class="btn btn-primary" asp-action="Edit" asp-controller="Manufacturer" asp-route-id="@Model.Id"><i class="fa fa-edit"></i> Edit</a>
+				</div>
+			</div>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3">
+            <div class="row mb-3">
+                <div class="col-10">
+                    <h4 class="m-0">Products</h4>
+                </div>
+      @*          <div class="col-2">
+                    <a class="btn btn-primary w-100" href="javascript:;">Create Product</a>
+                </div>*@
+            </div>
+            <div id="qpl-manufacturer-products-datagrid"></div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            window.qpl.pages.manufacturer.initDetails({
+                grid: "#qpl-manufacturer-products-datagrid"
+            }, @Model.Id);
+        });
+    </script>
+}

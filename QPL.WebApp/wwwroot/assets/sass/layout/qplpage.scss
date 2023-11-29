@@ -1,0 +1,11 @@
+.qplpage {
+    // background-color: black;
+    .qplContainerBox{
+       @extend .container-fluid;
+       @extend .shadow;
+       @extend .p-3;
+       @extend .mb-5;
+       @extend .bg-white;
+       @extend .rounded;
+    }
+}

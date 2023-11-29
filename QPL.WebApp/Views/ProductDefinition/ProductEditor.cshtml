@@ -1,0 +1,37 @@
+﻿@using QPL.WebApp.Models.Product;
+@model EditProductViewModel
+
+<h1>Product Editor</h1>
+
+<div class="netasqpl-page-producteditor">
+    <div class="container shadow-sm rounded bg-white p-5 mb-5">
+        <form id="producteditor-form">
+            <div id="dxForm" class="mb-3"></div>
+            <div class="row">
+                <div class="col-6">
+                    <a class="btn btn-outline-secondary" asp-action="Edit" asp-controller="ProductDefinition" asp-route-id=@Model.ProductDefinitionId><i class="fa fa-caret-left"></i> Cancel</a>
+                </div>
+                <div class="col-6 text-end">
+                    @if (Model.Id > 0)
+                    {
+                        <button class="btn btn-danger"><i class="fa fa-times"></i> Delete</button>
+                    }
+                    <button class="btn btn-primary" type="submit"><i class="fa fa-check"></i> Accept Changes</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        var data = @Html.Raw(Json.Serialize(Model));
+        document.addEventListener("DOMContentLoaded", () => {
+            window.NetasQPL.pages.productDefinition.initProductEditor({
+                editForm: "#producteditor-form",
+                editFormDx: "#producteditor-form #dxForm",
+                saveBtn: "#producteditor-form #save"
+            }, data);
+        });
+    </script>
+}

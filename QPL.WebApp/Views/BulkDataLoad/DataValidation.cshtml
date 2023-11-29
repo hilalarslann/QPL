@@ -1,0 +1,171 @@
+﻿@using QPL.WebApp.Models.BulkDataLoad;
+
+@model BulkProductViewModel
+
+@{
+    int succeedRowCount = 0;
+    int failedRowCount = 0;
+    int test = 0;
+}
+
+<div class="container">
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3">
+            <div>
+                Data Load Wizard Progress
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="circle active"></div> Data Load Source
+                    <div class="connector" style="left: 25px;"></div>
+                </div>
+                <div class="col">
+                    <div class="circle inactive"></div> Data / Table Mapping
+                    <div class="connector" style="left: 25px;"></div>
+                </div>
+                <div class="col">
+                    <div class="circle inactive"></div> Data Validation
+                    <div class="connector" style="left: 25px;"></div>
+                </div>
+                <div class="col">
+                    <div class="circle inactive"></div> Data Load Results
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br />
+
+    <div class="row m-3">
+        <div class="col-10">
+            <h3 class="m-0">BAŞARILI KAYITLAR</h3>
+        </div>
+    </div>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    @foreach (var item in Model.HeaderLine)
+                    {
+                        <th scope="col">@item</th>
+                    }
+                </tr>
+            </thead>
+            <tbody class="table table-success">
+                @foreach (var item in Model.succeedProductDefinition)
+                {
+                    succeedRowCount++;
+                    <tr>
+                        <th scope="row">@succeedRowCount</th>
+                        <td>@item.CPC</td>
+                        <td>@item.NortelCpc</td>
+                        <td>@item.EngineeringCode</td>
+                        <td>@item.SpecNo</td>
+                        <td>@item.Description</td>
+                        <td>@item.Comments</td>
+                        <td>@item.Concept</td>
+                        <td>@item.PackageType</td>
+                        <td>@item.RoshStatus</td>
+                        <td>@item.FlammabilityRating</td>
+                        <td>@item.RadiassionRating</td>
+                        <td>@item.DisassembledOrReusable</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <div class="row m-3">
+        <div class="col-10">
+            <h3 class="m-0">HATALI KAYITLAR</h3>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    @foreach (var item in Model.HeaderLine)
+                    {
+                        <th scope="col">@item</th>
+                    }
+                </tr>
+            </thead>
+            <tbody class="table table-danger">
+                @foreach (var item in Model.failedProductDefinitions)
+                {
+                    failedRowCount++;
+                    <tr>
+                        <th scope="row">@failedRowCount</th>
+                        <td>@item.CPC</td>
+                        <td>@item.NortelCpc</td>
+                        <td>@item.EngineeringCode</td>
+                        <td>@item.SpecNo</td>
+                        <td>@item.Description</td>
+                        <td>@item.Comments</td>
+                        <td>@item.Concept</td>
+                        <td>@item.PackageType</td>
+                        <td>@item.RoshStatus</td>
+                        <td>@item.FlammabilityRating</td>
+                        <td>@item.RadiassionRating</td>
+                        <td>@item.DisassembledOrReusable</td>
+                    </tr>
+                    <tr>
+                        <th>*</th>
+                        <td colspan="12">@Model.Messages[test]</td>
+                        @{
+                            test++;
+                        }
+                    </tr>
+                    }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<style>
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .table td {
+        white-space: normal;
+        word-wrap: break-word;
+    }
+</style>
+
+<style>
+    .circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .active {
+        background-color: blue;
+    }
+
+    .inactive {
+        background-color: lightgray;
+    }
+
+    /*    .connector {
+                position: absolute;
+                border-left: 2px solid grey;
+                height: 100%;
+                top: 10px;
+            }*/
+</style>
+
+
+
+

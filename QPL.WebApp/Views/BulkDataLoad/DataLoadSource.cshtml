@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row m-3">
+        <div class="col-10">
+            <h1 class="m-0">BulkDataLoad</h1>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3">
+            <div>
+                Data Load Wizard Progress
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="circle active"></div> Data Load Source
+                    <div class="connector" style="left: 25px;"></div>
+                </div>
+                <div class="col">
+                    <div class="circle inactive"></div> Data / Table Mapping
+                    <div class="connector" style="left: 25px;"></div>
+                </div>
+                <div class="col">
+                    <div class="circle inactive"></div> Data Validation
+                    <div class="connector" style="left: 25px;"></div>
+                </div>
+                <div class="col">
+                    <div class="circle inactive"></div> Data Load Results
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row m-3">
+        <div class="shadow-sm rounded bg-white p-3">
+            <form method="post" asp-action="ProductDefinitionExcelUpload" asp-controller="BulkDataLoad" enctype="multipart/form-data">
+                <div class="form-group" style=" padding-bottom: 20px;">
+                    <label for="fileInput">Dosya Adı:</label>
+                    <input type="file" name="file" id="file" class="form-control-file" />
+                </div>
+                <div class="row text-start">
+                    <div class="col-2">
+                        <button type="submit" class="btn btn-outline-secondary btn-light" asp-action="Index" asp-controller="ProductDefinition">İptal</button>
+                        <button type="submit" class="btn btn-primary">Yükle</button>
+                        <p>@ViewBag.message</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    @*            <form method="post" asp-action="Import" asp-controller="ProductDefinition" enctype="multipart/form-data">
+    <input type="file" name="file" />
+    <button type="submit">Import form Excel</button>
+    </form>*@
+</div>
+
+<style>
+    .circle {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+    }
+
+    .active {
+        background-color: blue;
+    }
+
+    .inactive {
+        background-color: lightgray;
+    }
+
+    /*    .connector {
+            position: absolute;
+            border-left: 2px solid grey;
+            height: 100%;
+            top: 10px;
+        }*/
+</style>
+
+<script>
+    var activeSection = "DataLoadSource"; // Sayfa yüklendiğinde aktif bölümü ayarlayın (örneğin: "DataLoadSource")
+    function setActiveSection(section) {
+        // Aktif bölümü güncelle
+        activeSection = section;
+
+        // Tüm yuvarlakları gri yap
+        var circles = document.getElementsByClassName("circle");
+        for (var i = 0; i < circles.length; i++) {
+            circles[i].classList.remove("active");
+            circles[i].classList.add("inactive");
+        }
+
+        // Tıklanan yuvarlağı mavi yap
+        var activeCircle = document.getElementById(section);
+        activeCircle.classList.remove("inactive");
+        activeCircle.classList.add("active");
+    }
+
+    // Sayfa yüklendiğinde aktif bölümü ayarlayın (örneğin: "DataLoadSource")
+    window.onload = function () {
+        setActiveSection(activeSection);
+    };
+</script>

@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QPL.WebApp
+build_property.RootNamespace = QPL.WebApp
+build_property.ProjectDir = C:\Users\hiarslan\Desktop\QPL\QPL.WebApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\hiarslan\Desktop\QPL\QPL.WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Pages/YetkiHatasi/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcWWV0a2lIYXRhc2lcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/BulkDataLoad/DataLoadResults.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVsa0RhdGFMb2FkXERhdGFMb2FkUmVzdWx0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/BulkDataLoad/DataLoadSource.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVsa0RhdGFMb2FkXERhdGFMb2FkU291cmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/BulkDataLoad/DataValidation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQnVsa0RhdGFMb2FkXERhdGFWYWxpZGF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/DetailedSearch/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV0YWlsZWRTZWFyY2hcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Manufacturer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Manufacturer/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyXEVkaXRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Manufacturer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudWZhY3R1cmVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/ProductDefinition/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERlZmluaXRpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/ProductDefinition/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERlZmluaXRpb25cRWRpdG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/ProductDefinition/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdERlZmluaXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Product/Editor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0b3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Search/ExcIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoXEV4Y0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Search/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2VhcmNoXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/hiarslan/Desktop/QPL/QPL.WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bvba84l2ed
